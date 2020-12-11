@@ -1,5 +1,7 @@
 # AerialRobotics
 
+<img src="gifs/head.gif" alt="polyhedron-1" width="400">
+
 This repo includes matlab code for:
 
 - Path planning algorithms (Dijkstra,  Astar,  Jump point search)
@@ -93,11 +95,11 @@ Trajectory tracking by use PD Controller, you can learn by [coursera](https://ww
 
 [2] S. Liu, M. Watterson, K. Mohta, K. Sun, S. Bhattacharya, C.J. Taylor, et al., "Planning dynamically feasible trajectories for quadrotors using safe flight corridors in 3-d complex environments", IEEE Robotics and Automation Let- ters, vol. 2, no. 3, pp. 1688-1695, July 2017.
 
+[3] D.W.Mellinger,"Trajectorygenerationandcontrolforquadrotors,"Ph.D. dissertation, Univ. Pennsylvania, Philadelphia, PA, 2012.
 
+[4] D. Mellinger and V. Kumar, "Minimum snap trajectory generation and control for quadrotors", inProc. 2011 IEEE Int. Conf. Robot.Autom.,2011
 
-
-
-[3]D. Mellinger and V. Kumar, "Minimum snap trajectory generation and control for quadrotors", inProc. 2011 IEEE Int. Conf. Robot.Autom.,2011
+[5] T. Lee, M. Leoky, and N. H. McClamroch, "Geometric tracking control of a quadrotor UAV on SE (3)," in *Proc. 49th IEEE Conf. Decis. Control*. IEEE, 2010, pp. 5420–5425.
 
 
 

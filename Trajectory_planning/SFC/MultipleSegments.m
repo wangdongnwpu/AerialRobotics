@@ -44,12 +44,6 @@ classdef MultipleSegments < handle
                 center = obj.lines_{i}.ellipsoid_.d_;
                 R = obj.lines_{i}.R_;
                 axes = obj.lines_{i}.ellipsoid_.axes_;
-                % big the Ellipsoids,so Ellipsoids can touch the plane
-                if i == len
-                    % axes = axes*1.7;
-                    % plot3(19.5, 14.5, 17.0,'r*');
-                    % plot3(20.5, 7.5, 17.0,'r*');
-                end
                 obj.draw_Ellipsoid(center, axes, R');
             end
             hold off;
@@ -90,11 +84,6 @@ classdef MultipleSegments < handle
                 pmid = (p2 + p1)/2;
                 [~, lenj] = size(planesCell);
                 for j = 1 : lenj
-                    % ===
-                    %if planesCell{j}.p_(1) == 19.5 && planesCell{j}.p_(3) == 17.0
-                    if j == 3
-                        obj.drawPlane(planesCell{j}.n_, planesCell{j}.p_, pmid, r);
-                    end
                     % obj.drawPlane(planesCell{j}.n_, planesCell{j}.p_, pmid, r);
                 end
             end
