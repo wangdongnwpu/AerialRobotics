@@ -23,17 +23,12 @@ MATLAB(R2019b is tested)
 
 ### Path Planning
 
-- #### dijkstra
+| dijkstra                                                 | Astar                                              | Jump Point Search                              |
+| -------------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------- |
+| <img src="gifs/dijkstra.gif" alt="dijkstra" width="270"> | <img src="gifs/Astar.gif" alt="Astar" width="270"> | <img src="gifs/JPS.gif" alt="JPS" width="270"> |
+| 1.642271 seconds                                         | 0.755504 seconds                                   | 0.451664 seconds                               |
 
-  <img src="gifs/dijkstra.gif" alt="dijkstra" width="500">    dijkstra time is 1.642271 seconds.
-
-- #### Astar
-
-  <img src="gifs/Astar.gif" alt="Astar" width="500">      Astar time is :  0.755504 seconds.
-
-- ####  Jump Point Search
-
-​       <img src="gifs/JPS.gif" alt="JPS" width="500">            JPS time is :  0.451664 seconds.
+ 
 
 ### Safe Flight Corridors
 
@@ -67,7 +62,7 @@ minSnapValue(X + Y + Z) is : 9376.0901
 
 
 
-- #### Trajectory 3: use 'Quadratic Programming' get Trajectory planning. use [SFC](https://github.com/LenaShengzhen/AerialRobotics) make Ax < b.
+- #### Trajectory 3: use 'Quadratic Programming' get Trajectory planning. use [SFC](Trajectory_planning/SFC) make Ax < b.
 
 <img src="gifs/SFC.gif" alt="SFC" width="270"><img src="imgs/SFC_postion.jpg" alt="SFC" width="270"><img src="imgs/SFC_velocity.jpg" alt="SFC" width="270"> 
 
@@ -83,7 +78,14 @@ Trajectory tracking by use PD Controller, you can learn by [coursera](https://ww
 
 
 
+## User mannual
 
+- Download the matlab 
+- Download the code 
+- set  [map](Trajectory_planning/maps/)  if you want try your map
+- set startpoint and endpoint at runism.m
+- run the code
+- optionally, if you want the gif of the result, you could run makeGifAndJpg 
 
 
 
