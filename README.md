@@ -5,7 +5,7 @@
 This repo includes matlab code for:
 
 - Path planning algorithms (Dijkstra,  Astar,  Jump point search)
-- Safe Flight Corridors
+- Generating Convex Polytopes(Safe Flight Corridors, IRIS-wait, ?-wait)
 - Trajectory planning
 - Quadrotor PD controller
 
@@ -21,7 +21,7 @@ MATLAB(R2019b is tested)
 
 
 
-### Path Planning
+### 1. Path Planning
 
 | dijkstra                                                 | Astar                                              | Jump Point Search                              |
 | -------------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------- |
@@ -30,7 +30,9 @@ MATLAB(R2019b is tested)
 
  
 
-### Safe Flight Corridors
+### 2. Generating Convex Polytopes
+
+### 	Safe Flight Corridors
 
 - ####  find_ellipsoid
 
@@ -42,17 +44,17 @@ MATLAB(R2019b is tested)
 
 
 
-### Trajectory planning
+### 3. Trajectory planning
 
 Compare different Trajectory planning：
 
-- #### Trajectory 1: use ['close form'](https://github.com/yrlu/quadrotor) get Trajectory planning.
+- #### Trajectory 1: use ['close form'](https://github.com/yrlu/quadrotor) get Trajectory.
 
 <img src="gifs/closeForm.gif" alt="closeForm" width="270"><img src="imgs/close_postion.jpg" alt="closeForm" width="270"><img src="imgs/close_velocity.jpg" alt="closeForm" width="270"> 
 
 The Trajectory pass every Path point.
 
-- #### Trajectory 2: use 'Quadratic Programming' get Trajectory planning. use ['corridor constraints'](https://github.com/symao/minimum_snap_trajectory_generation) make  Ax< b.
+- #### Trajectory 2: use 'Quadratic Programming' get Trajectory. use ['corridor constraints'](https://github.com/symao/minimum_snap_trajectory_generation) make  Ax< b.
 
 <img src="gifs/corridorConstraints.gif" alt="corridorConstraints" width="270"><img src="imgs/corridorConstraints_postion.jpg" alt="corridorConstraints" width="270"><img src="imgs/corridorConstraints_velocity.jpg" alt="corridorConstraints" width="270"> 
 
@@ -62,7 +64,7 @@ minSnapValue(X + Y + Z) is : 9376.0901
 
 
 
-- #### Trajectory 3: use 'Quadratic Programming' get Trajectory planning. use [SFC](Trajectory_planning/SFC) make Ax < b.
+- #### Trajectory 3: use 'Quadratic Programming' get Trajectory. use [SFC](Trajectory_planning/SFC) make Ax < b.
 
 <img src="gifs/SFC.gif" alt="SFC" width="270"><img src="imgs/SFC_postion.jpg" alt="SFC" width="270"><img src="imgs/SFC_velocity.jpg" alt="SFC" width="270"> 
 
@@ -72,7 +74,7 @@ minSnapValue(X + Y + Z) is : 2958.5877
 
 
 
-### Trajectory tracking
+### 4. Trajectory tracking
 
 Trajectory tracking by use PD Controller, you can learn by [coursera](https://www.coursera.org/learn/robotics-flight/home/welcome).
 
@@ -93,15 +95,15 @@ Trajectory tracking by use PD Controller, you can learn by [coursera](https://ww
 
 ##### Paper:
 
-[1] D. Harabor and A. Grastien. 2011. "Online Graph Pruning for Pathfinding on Grid Maps". In Proceedings of the 25th National Conference on Artificial Intelligence (AAAI), San Francisco, USA.
+[1] D. Harabor and A. Grastien. 2011. "**Online Graph Pruning for Pathfinding on Grid Maps**". In Proceedings of the 25th National Conference on Artificial Intelligence (AAAI), San Francisco, USA.
 
-[2] S. Liu, M. Watterson, K. Mohta, K. Sun, S. Bhattacharya, C.J. Taylor, et al., "Planning dynamically feasible trajectories for quadrotors using safe flight corridors in 3-d complex environments", IEEE Robotics and Automation Let- ters, vol. 2, no. 3, pp. 1688-1695, July 2017.
+[2] S. Liu, M. Watterson, K. Mohta, K. Sun, S. Bhattacharya, C.J. Taylor, et al., "**Planning dynamically feasible trajectories for quadrotors using safe flight corridors in 3-d complex environments**", IEEE Robotics and Automation Let- ters, vol. 2, no. 3, pp. 1688-1695, July 2017.
 
-[3] D.W.Mellinger,"Trajectorygenerationandcontrolforquadrotors,"Ph.D. dissertation, Univ. Pennsylvania, Philadelphia, PA, 2012.
+[3] D.W.Mellinger,"**Trajectory generation and control for quadrotors**"Ph.D. dissertation, Univ. Pennsylvania, Philadelphia, PA, 2012.
 
-[4] D. Mellinger and V. Kumar, "Minimum snap trajectory generation and control for quadrotors", inProc. 2011 IEEE Int. Conf. Robot.Autom.,2011
+[4] D. Mellinger and V. Kumar, "**Minimum snap trajectory generation and control for quadrotors**", inProc. 2011 IEEE Int. Conf. Robot.Autom.,2011
 
-[5] T. Lee, M. Leoky, and N. H. McClamroch, "Geometric tracking control of a quadrotor UAV on SE (3)," in *Proc. 49th IEEE Conf. Decis. Control*. IEEE, 2010, pp. 5420–5425.
+[5] T. Lee, M. Leoky, and N. H. McClamroch, "**Geometric tracking control of a quadrotor UAV on SE (3)**" in *Proc. 49th IEEE Conf. Decis. Control*. IEEE, 2010, pp. 5420–5425.
 
 
 
